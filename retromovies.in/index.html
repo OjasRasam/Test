@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My HTML Page</title>
+  <!-- Add your CSS stylesheets or inline styles here -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Add your JavaScript files or inline scripts here -->
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- Your HTML content goes here -->
+  <div class="logo"><!--Loge which on mouse hover will change the background to coloured background--></div>
+
+  <div class="slide_text"><h3>Take a trip back in your memory lane!
+  </h3></div>
+
+  <!-- Add your JavaScript code or inline scripts here -->
+  <script>
+    // Your JavaScript code goes here
+    
+    var body = document.querySelector('body');
+    var hoverElement = document.querySelector('.logo');
+
+    hoverElement.addEventListener('mouseover', function() {
+    body.style.backgroundImage = "url('images/background_color.jpg')";
+    });
+
+    hoverElement.addEventListener('mouseout', function() {
+    body.style.backgroundImage = "url('images/background.jpg')";
+    });
+  </script>
+</body>
+</html>
